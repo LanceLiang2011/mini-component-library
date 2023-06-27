@@ -11,11 +11,13 @@ const STYLES = {
     "--height": `${24 / 16}rem`,
     "--border-bottom": `1px solid ${COLORS.black}`,
     "--font-size": `${14 / 16}rem`,
+    "--padding-left": `${24}px`,
   },
   large: {
     "--height": `${36 / 16}rem`,
     "--border-bottom": `2px solid ${COLORS.black}`,
     "--font-size": `${18 / 16}rem`,
+    "--padding-left": `${32}px`,
   },
 };
 
@@ -54,7 +56,7 @@ const TextInput = styled.input`
   width: ${(props) => `${props.width}px`};
   border: none;
   border-bottom: var(--border-bottom);
-  padding-left: 24px;
+  padding-left: var(--padding-left);
   font-size: var(--font-size);
   font-weight: 700;
   outline-offset: 2px;
