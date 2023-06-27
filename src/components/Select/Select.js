@@ -37,7 +37,7 @@ const NativeSelect = styled.select`
   height: 100%;
   opacity: 0;
   appearance: none;
-  z-index: 2;
+  /* z-index: 2; */
 `;
 
 const Presentational = styled.div`
@@ -53,6 +53,10 @@ const Presentational = styled.div`
     outline: 1px dotted #212121;
     outline: 5px auto -webkit-focus-ring-color;
   }
+
+  ${NativeSelect}:hover + & {
+    color: ${COLORS.black};
+  }
 `;
 
 const IconWrapper = styled.div`
@@ -62,7 +66,8 @@ const IconWrapper = styled.div`
   right: 10px;
   margin: auto;
   height: var(--size);
-  z-index: 1;
+  /* z-index: 1; */
+  pointer-events: none;
 `;
 
 export default Select;
