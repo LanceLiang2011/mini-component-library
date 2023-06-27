@@ -13,12 +13,12 @@ const SIZE_STYLES = {
   },
   medium: {
     "--height": "12px",
-    "--border-radius": "4px",
+    "--border-radius": "6px",
     "--padding": "0",
   },
   large: {
     "--height": "24px",
-    "--border-radius": "4px",
+    "--border-radius": "8px",
     "--padding": "4px",
   },
 };
@@ -51,5 +51,6 @@ const Bar = styled.div`
   width: var(--value);
   background-color: ${COLORS.primary};
   height: 100%;
+  border-radius: 4px 0px 0px 4px; ;
 `;
 export default ProgressBar;
